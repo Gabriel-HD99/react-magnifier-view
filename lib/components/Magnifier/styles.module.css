@@ -1,0 +1,88 @@
+.imageZoomContainer {
+  display: inline-block;
+  position: relative;
+}
+
+.magnifyWrapper {
+  position: relative;
+  max-height: 50vh;
+  display: inline-block;
+  cursor: zoom-in;
+  overflow: visible;
+}
+
+.magnifyWrapper:hover,
+.magnifyWrapper:active {
+  cursor: zoom-in;
+}
+
+.mainImage {
+  max-height: inherit;
+  width: 100%;
+  height: auto;
+  display: block;
+  user-select: none;
+}
+
+.magnifierIcon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.zoomHint {
+  position: absolute;
+  align-items: center;
+  bottom: 5px;
+  right: 5px;
+  padding: 8px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  pointer-events: none;
+  z-index: 10;
+  transition: opacity 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  gap: 6px;
+  color: #666;
+}
+
+.zoomHintText {
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.magnifierPortal > div {
+  position: relative;
+  outline: 3px solid rgba(255, 255, 255, 0.5);
+  filter: drop-shadow(0 0 15px rgba(6, 0, 0, 0.156));
+}
+
+.magnifierPortal > div::before {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  z-index: -1;
+  border-radius: 50%;
+  background: transparent;
+  backdrop-filter: blur(12px) saturate(150%);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3),
+    inset 0 0 15px rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+
+  -webkit-mask-image: radial-gradient(
+    circle at center,
+    transparent 0%,
+    transparent 85%,
+    white 85%,
+    white 100%
+  );
+  mask-image: radial-gradient(
+    circle at center,
+    transparent 0%,
+    transparent 85%,
+    white 85%,
+    white 100%
+  );
+}
