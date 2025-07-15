@@ -23,7 +23,10 @@
     "type": "git",
     "url": "https://github.com/Gabriel-HD99/react-magnifier-view.git"
   },
-  "homepage": "https://github.com/Gabriel-HD99/react-magnifier-view#readme",
+  "homepage": "https://gabriel-hd99.github.io/react-magnifier-view/",
+  "bugs": {
+    "url": "https://github.com/Gabriel-HD99/react-magnifier-view/issues"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc --p ./tsconfig.lib.json && vite build",

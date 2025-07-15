@@ -1,6 +1,11 @@
 # React Magnifier View
 
-A modern, lightweight React component for image magnification with smooth hover effects and customizable styling. Perfect for desktop applications where users need to examine images in detail.
+A modern, lightweight React component for image magnification with smooth hover effects.
+
+## 🚀 [Live Demo](https://gabriel-hd99.github.io/react-magnifier-view/)
+
+[![npm version](https://badge.fury.io/js/react-magnifier-view.svg)](https://www.npmjs.com/package/react-magnifier-view)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Features
 
