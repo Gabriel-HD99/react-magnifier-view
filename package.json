@@ -29,6 +29,10 @@
     "build": "tsc --p ./tsconfig.lib.json && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "demo:dev": "cd demo && vite",
+    "demo:build": "cd demo && vite build",
+    "demo:preview": "cd demo && vite preview",
+    "predemo:build": "npm run build",
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {

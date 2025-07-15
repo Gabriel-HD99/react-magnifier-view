@@ -1,0 +1,297 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui,
+    sans-serif;
+  line-height: 1.6;
+}
+
+.App-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 60px 40px;
+  color: white;
+  margin-bottom: 50px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.App-header h1 {
+  margin: 0 0 15px 0;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.App-header p {
+  margin: 0 0 25px 0;
+  font-size: 1.3rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.header-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.header-links a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.demo-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.demo-section {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid #e1e5e9;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.demo-section h2 {
+  color: #2d3748;
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.demo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.demo-item > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.demo-item img {
+  max-width: 650px;
+  max-height: 450px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.demo-description {
+  text-align: left;
+  background: #f8fafc;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  min-width: 320px;
+  max-width: 400px;
+}
+
+.demo-description h3 {
+  margin: 0 0 15px 0;
+  color: #2d3748;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.demo-description p {
+  margin: 0 0 20px 0;
+  color: #4a5568;
+  font-size: 1rem;
+}
+
+.demo-description ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #718096;
+}
+
+.demo-description li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* Installation section */
+.installation {
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+}
+
+.installation-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.install-box,
+.usage-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.install-box h3,
+.usage-box h3 {
+  margin: 0 0 15px 0;
+  color: #2d3748;
+  font-size: 1.2rem;
+}
+
+.code-block {
+  background: #1a202c;
+  color: #e2e8f0;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+  font-size: 0.9rem;
+  overflow-x: auto;
+}
+
+.code-block code {
+  color: #68d391;
+}
+
+.code-block pre {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.feature {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.feature h4 {
+  margin: 0 0 10px 0;
+  color: #2d3748;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.feature p {
+  margin: 0;
+  color: #4a5568;
+  font-size: 0.95rem;
+}
+
+.App-footer {
+  margin-top: 60px;
+  padding: 30px;
+  background: #f8fafc;
+  border-radius: 12px;
+  color: #718096;
+}
+
+.App-footer a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.App-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .demo-item {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .demo-description {
+    text-align: center;
+    min-width: auto;
+    max-width: 100%;
+  }
+
+  .demo-item img {
+    max-width: 100%;
+    max-height: 300px;
+  }
+
+  .App-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .App-header p {
+    font-size: 1.1rem;
+  }
+
+  .demo-section {
+    padding: 25px;
+  }
+
+  .installation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 15px;
+  }
+
+  .demo-item img {
+    max-height: 250px;
+  }
+
+  .demo-description {
+    padding: 20px;
+  }
+
+  .App-header {
+    padding: 40px 20px;
+  }
+
+  .App-header h1 {
+    font-size: 1.8rem;
+  }
+}
