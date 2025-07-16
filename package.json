@@ -15,7 +15,15 @@
     "zoom",
     "image",
     "component",
-    "typescript"
+    "typescript",
+    "hover-effects",
+    "magnifying-glass",
+    "image-zoom",
+    "react-component",
+    "ui-component",
+    "react-image-view",
+    "react-magnifier",
+    "react-magnifier-view"
   ],
   "author": "Gabriel Hernandez gabriel_.199@hotmail.com",
   "license": "MIT",

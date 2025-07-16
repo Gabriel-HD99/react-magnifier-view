@@ -83,34 +83,32 @@
 
 .demo-item {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
+  align-items: flex-start;
+  gap: 30px;
   max-width: 1000px;
   margin: 0 auto;
 }
 
 .demo-item > div:first-child {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
+  flex: 1;
+  min-width: 0;
 }
 
 .demo-item img {
+  width: 100%;
+  height: auto;
   max-width: 650px;
-  max-height: 450px;
+  border-radius: 8px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .demo-description {
+  flex: 0 0 320px;
   text-align: left;
   background: #f8fafc;
   padding: 30px;
   border-radius: 12px;
   border: 1px solid #e2e8f0;
-  min-width: 320px;
-  max-width: 400px;
 }
 
 .demo-description h3 {
@@ -137,7 +135,6 @@
   font-size: 0.95rem;
 }
 
-/* Installation section */
 .installation {
   background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
 }
@@ -230,24 +227,21 @@
   text-decoration: underline;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .demo-item {
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
   }
 
   .demo-description {
+    flex: none;
+    width: 100%;
+    max-width: 500px;
     text-align: center;
-    min-width: auto;
-    max-width: 100%;
   }
+}
 
-  .demo-item img {
-    max-width: 100%;
-    max-height: 300px;
-  }
-
+@media (max-width: 768px) {
   .App-header h1 {
     font-size: 2.2rem;
   }
@@ -277,10 +271,6 @@
 @media (max-width: 480px) {
   .App {
     padding: 15px;
-  }
-
-  .demo-item img {
-    max-height: 250px;
   }
 
   .demo-description {
